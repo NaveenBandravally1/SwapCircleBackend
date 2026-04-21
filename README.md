@@ -1,35 +1,108 @@
-# SwapCircleBackend
+# 🚀 SwapCircle Backend
 
-Completed Features
-User System
-•	Username-based login (no password) — stored in localStorage
-•	Auto-prompted on first visit
-Item Listings
-•	Add Item — title, description, price, condition, category, image upload (drag & drop)
-•	Browse Items — search by keyword, filter by category, sort by price/newest
-•	Item Cards — thumbnail, price, condition badge
-•	Item Modal — full detail view with image, description, owner info
-Offers
-•	Submit a price offer on any item
-•	Owner can Accept / Decline offers
-•	Status tracking: PENDING → ACCEPTED / REJECTED
-•	(Bug just fixed — amount was not displaying due to field name mismatch)
-In-App Chat
-•	Real-time messaging per item (polls every 3 seconds)
-•	Buyer ↔ Seller conversation inside item modal
-Image Upload
-•	Upload images when listing items
-•	Images served from ~/swapcircle-uploads/
-Static Pages
-•	Home — hero, category shortcuts, latest listings, "How It Works" section
-•	Services — displays 6 service categories
-•	Contact — contact form (frontend-only, no email sending)
- 
-Notable Limitations
-•	No database — all data is in-memory, resets on server restart
-•	No authentication — anyone can type any username
-•	No notifications — no alerts when offer is accepted or chat received
-•	Contact form — doesn't actually send emails
- 
+A simple college marketplace backend that allows users to buy, sell, and negotiate items with real-time chat — built as an MVP for a campus exchange platform.
 
-<img width="482" height="674" alt="image" src="https://github.com/user-attachments/assets/c941850a-1ab1-4fce-a3b0-6d9fb4806624" />
+---
+
+## 📌 Overview
+
+SwapCircle solves the problem of unused items (like books, gadgets, etc.) by enabling a secure, private exchange platform without sharing personal contact details.
+
+---
+
+## ✨ Features
+
+### 👤 User System
+- Username-based login (no password)
+- Stored in browser (localStorage)
+- Auto prompt on first visit
+
+---
+
+### 📦 Item Listings
+- Add item with:
+  - Title
+  - Description
+  - Price
+  - Condition
+  - Category
+  - Image (drag & drop upload)
+
+- Browse items with:
+  - Search (keyword)
+  - Filter (category)
+  - Sort (price / newest)
+
+- Item display:
+  - Thumbnail preview
+  - Condition badge
+
+- Item modal:
+  - Full description
+  - Owner info
+  - Image preview
+
+---
+
+### 💰 Offers System
+- Buyers can submit price offers
+- Sellers can:
+  - Accept
+  - Reject
+
+- Offer status:
+  PENDING → ACCEPTED / REJECTED
+
+- Bug Fix:
+  Fixed issue where offer amount was not displaying (field mismatch)
+
+---
+
+### 💬 In-App Chat
+- Real-time chat between buyer & seller
+- Chat per item
+- Polling every 3 seconds
+- No external apps required
+
+---
+
+### 🖼️ Image Upload
+- Drag & drop upload
+- Stored locally:
+  ~/swapcircle-uploads/
+
+---
+
+### 📄 Static Pages
+- Home
+  - Hero section
+  - Category shortcuts
+  - Latest listings
+  - How It Works
+
+- Services
+  - 6 categories display
+
+- Contact
+  - Frontend form (no backend email support)
+
+---
+
+## ⚠️ Limitations (MVP Stage)
+
+- No database (data stored in-memory, resets on restart)
+- No authentication (any username allowed)
+- No notifications (no alerts for chat or offers)
+- Contact form not functional (no email integration)
+
+---
+
+## 🛠️ Tech Stack
+
+- Backend: (Add your stack here, e.g., Node.js / Spring Boot)
+- Storage: Local filesystem
+- Communication: Polling-based chat
+
+---
+
+## 📂 Project Structure
